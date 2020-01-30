@@ -1,2 +1,2 @@
-# 220
-csc 220
+# CSC 220 Data Structure / Big Data
+
