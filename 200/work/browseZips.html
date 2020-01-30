@@ -1,0 +1,124 @@
+<!-- Ryan Lin, CIS 200, Prof Taylor, 4/4/19, Homework 8 -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+      <head>
+            <meta charset="utf-8">
+            <title>Homework 8</title>
+            <link rel='stylesheet' href='https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css'>
+            <link rel='stylesheet' href='/ataylor/fancy-table.css'>
+            <link rel='stylesheet' href='/ataylor/lms.css'>
+            <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+            <script type='text/javascript' src='/ataylor/utilities.js'></script>
+            <script src='https://code.jquery.com/jquery-1.12.4.js'></script>
+            <script src='https://code.jquery.com/ui/1.12.1/jquery-ui.js'></script>
+            <script type="text/javascript">
+
+            var zips = [];
+            var index = 0;
+
+                  function getData() {
+
+                        var url = 'http://serenity.rider.edu:9046/ataylor/getZips.py';
+                        $.getJSON(url, function(data) {
+                              zips = data;
+                              message('received data ' + zips.length);
+                        });
+
+                        message('after getJSON ' + zips.length);
+
+                        /*
+                        zips[0] = {'zip':'08648', 'city':'Lawrence', 'state':'NJ', 'municipality':'Lawrence'};
+                        zips[1] = {'zip':'08648', 'city':'New York', 'state':'NY', 'municipality':'New York'};
+                        zips[2] = {'zip':'08648', 'city':'Los Angeles', 'state':'CA', 'municipality':'LA'};
+                        */
+                        /*
+                        var zips = {};
+
+                        zips.zip = document.getElementById('zip').value;
+                        zips.city = document.getElementById('city').value;
+                        zips.state = document.getElementById('state').value;
+                        zips.municipality = document.getElementById('municipality').value;
+                        */
+                        // displayData(zips[0]);
+                  }
+
+                  function next() {
+                        if (index + 1>= zips.length) {
+                              alert('silence');
+                              return;
+                        } else;
+                        index++;
+                        displayData(zips[index]);
+                  }
+
+                  // Homework do sheet
+
+                  function previous() {
+                        if (index - 1 < 0) {
+                              alert('silence');
+                              return;
+                        } else;
+                        index--;
+                        displayData(zips[index]);
+                  }
+
+                  function first() {
+                        index = 0;
+                        displayData(zips[index]);
+                  }
+                  // Has to be zips.length - 1 because the array is 0 based while the .length property is not (starts at 1).
+                  // zips.length = 3 while we want index to only go up to 2 [0, 1, 2]
+                  function last() {
+                        index = zips.length -1;
+                        displayData(zips[index]);
+                  }
+
+                  function displayData(z) {
+
+                        $('#zip').val(z.zip);
+                        $('#city').val(z.city);
+                        $('#state').val(z.state);
+                        $('#municipality').val(z.municipality);
+
+                  /*    document.getElementById('testingtoseeifitsbroken').innerHTML = z.zip + z.city + z.state + z.municipality;
+                        $('#testingtoseeifitsbroken').html(z.zip + '<br>' +  z.city +  '<br>' + z.state + '<br>' + z.municipality);
+                        console.log('It works...?')
+                  */
+                  }
+            </script>
+      </head>
+
+      <body>
+            <div class="main-centered">
+                  <table class='fancy-table'>
+                        <tr>
+                              <td>Zip Code:</td>
+                              <td><input type="text" id='zip' name="" value=""></td>
+                        </tr>
+                        <tr>
+                              <td>City:</td>
+                              <td><input type="text" id='city' name="" value=""></td>
+                        </tr>
+                        <tr>
+                              <td>State:</td>
+                              <td><input type="text" id='state' name="" value=""></td>
+                        </tr>
+                        <tr>
+                              <td>Municipality:</td>
+                              <td><input type="text" id='municipality' name="" value=""></td>
+                        </tr>
+                  </table>
+                  <br>
+                  <button type="button" onclick="getData()" name="button">Get Zips</button>
+                  <button type="button" onclick="next()" name="button">Next</button>
+                  <button type="button" onclick="previous()" name="button">Previous</button>
+                  <button type="button" onclick="first()" name="button">First</button>
+                  <button type="button" onclick="last()" name="button">Last</button>
+                  <!--
+                  <div id="testingtoseeifitsbroken" style="text-align: center; margin-top: 10px; font-family: 'Roboto', sans-serif;">
+
+                  </div>
+            -->
+            </div>
+      </body>
+</html>

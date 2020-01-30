@@ -1,0 +1,51 @@
+<!-- Ryan Lin , In class, CIS 200, Prof Taylor  -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+      <head>
+            <meta charset="utf-8">
+            <title>Idk what this is</title>
+            <link rel='stylesheet' href='https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css'>
+            <link rel='stylesheet' href='/ataylor/fancy-table.css'>
+            <link rel='stylesheet' href='/ataylor/lms.css'>
+            <script type='text/javascript' src='/ataylor/utilities.js'></script>
+            <script src='https://code.jquery.com/jquery-1.12.4.js'></script>
+            <script src='https://code.jquery.com/ui/1.12.1/jquery-ui.js'></script>
+            <script type="text/javascript">
+
+                  function addRecord() {
+
+                        var fname = $('#fname').val();
+                        var lname = $('#fname').val();
+                        var age = $('#age').val();
+
+                        var url = 'http://serenity.rider.edu:9046/ataylor/studentInsert.py';
+                        url = url + '?fname=' + fname + '&lname=' + lname + '&age=' + age;
+
+                        $.getJSON(url, function(data) {
+                              alert('Inserted ' + data.rows_updated + ' records.');
+                        });
+
+                  }
+
+            </script>
+      </head>
+      <body>
+            <div class="main-centered">
+                  <table class='fancy-table'>
+                        <tr>
+                              <td>First:</td>
+                              <td><input type="text" id='fname' name="" value=""></td>
+                        </tr>
+                        <tr>
+                              <td>Last:</td>
+                              <td><input type="text" id='lname' name="" value=""></td>
+                        </tr>
+                        <tr>
+                              <td>Age:</td>
+                              <td><input type="text" id='age' name="" value=""></td>
+                        </tr>
+                  </table>
+                  <button type="button" onclick="addRecord()" name="button">Submit</button>
+            </div>
+      </body>
+</html>

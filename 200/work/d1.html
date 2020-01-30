@@ -1,0 +1,37 @@
+<!-- Ryan Lin, Prof Taylor @ CIS 200 , 2/27/19 -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+      <head>
+            <meta charset="utf-8">
+            <title>Demo 5</title>
+            <link rel="stylesheet" href="/ataylor/fancy-table.css">
+            <link rel="stylesheet" href="/ataylor/lms.css">
+            <script type="text/javascript">
+                  function doInput() {
+
+                        var fname;
+                        var lname;
+
+                        fname = document.getElementById('fname').value;
+                        lname = document.getElementById('lname').value;
+
+                        alert('name is: ' + fname + ' ' +  lname);
+                  }
+            </script>
+      </head>
+      <body>
+            <div class="main-centered">
+                  <table class="fancy-table">
+                        <tr>
+                              <td>First: </td>
+                              <td><input type="text" id='fname'></td>
+                        </tr>
+                        <tr>
+                              <td>Last: </td>
+                              <td><input type="text" id='lname'></td>
+                        </tr>
+                  </table>
+                  <button type="button" onclick="doInput();" name="button">Submit</button>
+            </div>
+      </body>
+</html>

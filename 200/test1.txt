@@ -1,0 +1,6 @@
+1. Tim burners-lee created the web
+2. The internet is a network of networks running tcip protocall, the web browser is network of servers
+3. architetcure of the web
+      web browsers and servers communicating in response cycles
+4. url/uri - protocall -> web server -> path to resource -> resource
+5. html = declarative, js = imperative.

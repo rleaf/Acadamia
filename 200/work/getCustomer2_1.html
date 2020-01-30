@@ -1,0 +1,82 @@
+<html>
+    <head>
+
+        <link rel='stylesheet'
+href='https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css'>
+        <link rel='stylesheet' href='/ataylor/fancy-table.css'>
+        <link rel='stylesheet' href='/ataylor/lms.css'>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.js"></script>
+
+    </head>
+
+    <script type = "text/javascript">
+        var dataArray = [];
+        var index = 0;
+        $.getJSON('http://serenity.rider.edu:9046/ataylor/dbget.py',
+                          function(data){
+                            dataArray = data;
+                            displayCustomer();
+                          });
+        function displayCustomer(){
+               $('#fname').val( dataArray[index].fname );
+               $('#lname').val( dataArray[index].lname );
+               $('#age').val( dataArray[index].age );
+               $('#gender').val( dataArray[index].gender );
+               $('#address').val( dataArray[index].address1 );
+               $('#city').val( dataArray[index].city );
+               $('#state').val( dataArray[index].state );
+        }
+        function firstRecord(){
+            index = 0;
+            displayCustomer();
+        }
+        function nextRecord(){
+            index++;
+            displayCustomer();
+        }
+    </script>
+
+    <body>
+
+        <div class='main-centered'>
+
+            <table class='fancy-table'>
+
+        <table>
+            <tr>
+                <td>First Name</td>
+                <td><input type = "text" id = "fname"></input></td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td><input type = "text" id = "lname"></input></td>
+            </tr>
+            <tr>
+                <td>Age</td>
+                <td><input type = "text" id = "age"></input></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td><input type = "text" id = "gender"></input></td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><input type = "text" id = "address"></input></td>
+            </tr>
+            <tr>
+                <td>City</td>
+                <td><input type = "text" id = "city"></input></td>
+            </tr>
+            <tr>
+                <td>State</td>
+                <td><input type = "text" id = "state"></input></td>
+            </tr>
+
+        </table>
+
+        <button onclick = "firstRecord()">First Record</button>
+        <button onclick = "nextRecord()">Next Record</button>
+
+    </body>
+
+</html>

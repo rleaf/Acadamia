@@ -1,0 +1,43 @@
+<!-- Ryan Lin, CIS 200, Prof Taylor, 4/7/19 -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+      <head>
+            <meta charset="utf-8">
+            <title>Extra Credit 2</title>
+            <link rel='stylesheet' href='https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css'>
+            <link rel='stylesheet' href='/ataylor/fancy-table.css'>
+            <link rel='stylesheet' href='/ataylor/lms.css'>
+            <script type='text/javascript' src='/ataylor/utilities.js'></script>
+            <script src='https://code.jquery.com/jquery-1.12.4.js'></script>
+            <script src='https://code.jquery.com/ui/1.12.1/jquery-ui.js'></script>
+            <script type="text/javascript">
+
+                  function doNumbersDemo() {
+
+                        var int1 = 5;
+                        var int2 = 3;
+
+                        var dec1 = 3.14; // pi
+                        var dec2 = 2.71; // e
+
+                        document.getElementById('div1').innerHTML = int1 / int2;
+                        $('#div2').html(int1/dec2/dec1);
+                  }
+            </script>
+
+      </head>
+      <body>
+            <div class="main-centered">
+                  <h1>Number Demos</h1>
+
+                  <div id="div1">
+
+                  </div>
+                  <div id="div2">
+
+                  </div>
+                  <button type="button" onclick="doNumbersDemo()" name="button">Demo Numbers</button>
+
+            </div>
+      </body>
+</html>

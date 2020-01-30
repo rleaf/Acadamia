@@ -1,0 +1,83 @@
+<!-- Ryan Lin, CIS 200, Prof Taylor, EC7, 4/7/19 -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+      <head>
+            <meta charset="utf-8">
+            <title>Extra Credit 7</title>
+            <link rel='stylesheet' href='https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css'>
+            <link rel='stylesheet' href='/ataylor/fancy-table.css'>
+            <link rel='stylesheet' href='/ataylor/lms.css'>
+            <script type='text/javascript' src='/ataylor/utilities.js'></script>
+            <script src='https://code.jquery.com/jquery-1.12.4.js'></script>
+            <script src='https://code.jquery.com/ui/1.12.1/jquery-ui.js'></script>
+            <script type="text/javascript">
+
+                  function doBookInput() {
+
+                        var bookObject = {};
+
+                        bookObject.name = $('#name').val();
+                        bookObject.author = $('#author').val();
+                        bookObject.pages = $('#pages').val();
+                        bookObject.publisher = $('#publisher').val();
+                        bookObject.genre = $('#genre').val();
+
+                        alerts(bookObject);
+
+
+
+                  }
+
+                  function alerts(b) {
+
+                        if (b.pages < 0 || b.pages > 2000) {
+                              alert('Error: number of pages is incorrect. Min 0 & max 2000');
+                              return;
+                        }
+
+                        if (b.publisher != 'Global' && b.publisher != 'Prentice Hall' && b.publisher != 'Regency') {
+                              alert('Error: publisher is incorrect. Please type "Global", "Prentice Hall", or "Regency"');
+                              return;
+                        }
+
+                        if (b.genre != 'Romance' && b.genre != 'Horror') {
+                              alert('Error: invalid genre. Please type "Romance" or "Horror"');
+                              return;
+                        }
+
+                        alert(JSON.stringify(b));
+
+                  }
+
+            </script>
+
+      </head>
+      <body>
+            <div class="main-centered">
+                  <h1>Book Information</h1>
+                  <table class='fancy-table'>
+                        <tr>
+                              <td>Book Name:</td>
+                              <td><input type="text" id='name' name="" value=""></td>
+                        </tr>
+                        <tr>
+                              <td>Author:</td>
+                              <td><input type="text" id='author' name="" value=""></td>
+                        </tr>
+                        <tr>
+                              <td>Number of Pages:</td>
+                              <td><input type="text" id='pages' name="" value=""></td>
+                        </tr>
+                        <tr>
+                              <td>Publisher:</td>
+                              <td><input type="text" id='publisher' name="" value=""></td>
+                        </tr>
+                        <tr>
+                              <td>Genre:</td>
+                              <td><input type="text" id='genre' name="" value=""></td>
+                        </tr>
+                  </table>
+                  <button type="button" onclick="doBookInput()" name="button">Input Book</button>
+            </div>
+      </body>
+</html>

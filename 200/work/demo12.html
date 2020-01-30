@@ -1,0 +1,63 @@
+<!--Ryan Lin  -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+      <head>
+            <meta charset="utf-8">
+            <title></title>
+            <link rel='stylesheet' href='https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css'>
+            <link rel='stylesheet' href='/ataylor/fancy-table.css'>
+            <link rel='stylesheet' href='/ataylor/lms.css'>
+            <script type='text/javascript' src='/ataylor/utilities.js'></script>
+            <script src='https://code.jquery.com/jquery-1.12.4.js'></script>
+            <script src='https://code.jquery.com/ui/1.12.1/jquery-ui.js'></script>
+            <script type="text/javascript">
+
+                  function doInput() {
+                        var student = {};
+
+                        student.fname = document.getElementById('fname').value;
+                        student.age = $('#age').val();
+
+                        if(student.age < 0) {
+                              alert('Incorrect age');
+                        }
+
+                        checkInput(student);
+                        displayInput(student);
+
+                  }
+
+                  function displayInput(g) {
+                        message('Hello ' + g.fname + ' you are ' + g.age + ' years old. ');
+
+                        if(g.age >= 21) {
+                              message('You can buy alcohol.')
+                        }
+                  }
+
+                  function checkInput(g) {
+                        if (g.age > 0 && g.age < 51)
+                              alert('Helloooo');
+                  }
+
+
+            </script>
+      </head>
+      <body>
+            <div class="main-centered">
+                  <table class='fancy-table'>
+                        <tr>
+                              <td>First Name:</td>
+                              <td><input type="text" id='fname' name="" value=""></td>
+                        </tr>
+                        <tr>
+                              <td>Age:</td>
+                              <td><input type="text" id='age' name="" value=""></td>
+                        </tr>
+                  </table>
+                  <br>
+                  <button type="button" onclick="doInput()" name="button">Submit</button>
+
+            </div>
+      </body>
+</html>

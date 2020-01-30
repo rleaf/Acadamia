@@ -1,0 +1,165 @@
+<html>
+
+<head>
+    
+         <link rel='stylesheet' href='/ataylor/fancy-table.css'>
+         <link rel='stylesheet' href='/ataylor/lms.css'>
+         <link rel='stylesheet' href='https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css'>
+         <script type='text/javascript' src='http://serenity.rider.edu:9046/ataylor/utilities.js'></script> 
+         <script src='https://code.jquery.com/jquery-1.12.4.js'></script>
+         <script src='https://code.jquery.com/ui/1.12.1/jquery-ui.js'></script>
+
+  <script type='text/javascript'>
+    
+    window.onload = function(){ getData();}; 
+    
+    function getData() {
+        
+     $.getJSON( 'http://serenity.rider.edu:9046/ataylor/dbget.py',
+                 function(data) {
+                    
+                    //alert( JSON.stringify( data ));
+                    outputData( data );
+                 } );
+                   alert('hello - waiting');
+    }
+    
+    function outputData( recs ) {
+
+        var buffer = "";  
+        for ( var n = 0; n < recs.length; n++ ) {
+            
+            buffer = buffer + "<li>" + recs[n].fname + " " + recs[n].lname + "</li>";
+            
+        }
+        buffer = "<ul>" + buffer + "</ul>";
+        $("#main").html( buffer );
+        
+    }
+        
+  </script>  
+    
+</head>
+
+<div id='main' class='main-centered'>
+    
+</div>
+
+</html>
+
+<head>
+    
+         <link rel='stylesheet' href='/ataylor/fancy-table.css'>
+         <link rel='stylesheet' href='/ataylor/lms.css'>
+         <link rel='stylesheet' href='https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css'>
+         <script type='text/javascript' src='http://serenity.rider.edu:9046/ataylor/utilities.js'></script> 
+         <script src='https://code.jquery.com/jquery-1.12.4.js'></script>
+         <script src='https://code.jquery.com/ui/1.12.1/jquery-ui.js'></script>
+
+  <script type='text/javascript'>
+    
+    window.onload = function(){ getData();}; 
+    
+    function getData() {
+        
+     $.getJSON( 'http://serenity.rider.edu:9046/ataylor/dbget.py',
+                 function(data) {
+                    
+                    //alert( JSON.stringify( data ));
+                    outputData( data );
+
+<html>
+
+<head>
+    
+         <link rel='stylesheet' href='/ataylor/fancy-table.css'>
+         <link rel='stylesheet' href='/ataylor/lms.css'>
+         <link rel='stylesheet' href='https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css'>
+         <script type='text/javascript' src='http://serenity.rider.edu:9046/ataylor/utilities.js'></script> 
+         <script src='https://code.jquery.com/jquery-1.12.4.js'></script>
+         <script src='https://code.jquery.com/ui/1.12.1/jquery-ui.js'></script>
+
+  <script type='text/javascript'>
+    
+    window.onload = function(){ getData();}; 
+    
+    function getData() {
+        
+     $.getJSON( 'http://serenity.rider.edu:9046/ataylor/dbget.py',
+                 function(data) {
+                    
+                    //alert( JSON.stringify( data ));
+                    outputData( data );
+                 } ); 
+        alert('hello - waiting');
+    }
+    
+    function outputData( recs ) {
+        
+        var buffer = "";  
+        for ( var n = 0; n < recs.length; n++ ) {
+            
+            buffer = buffer + "<li>" + recs[n].fname + " " + recs[n].lname + "</li>";
+            
+        }
+        buffer = "<ul>" + buffer + "</ul>";
+        $("#main").html( buffer );
+        
+    }
+        
+  </script>  
+
+</head>
+
+<div id='main' class='main-centered'>
+
+</div>
+
+</html>
+
+<head>
+    
+         <link rel='stylesheet' href='/ataylor/fancy-table.css'>
+         <link rel='stylesheet' href='/ataylor/lms.css'>
+         <link rel='stylesheet' href='https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css'>
+         <script type='text/javascript' src='http://serenity.rider.edu:9046/ataylor/utilities.js'></script> 
+         <script src='https://code.jquery.com/jquery-1.12.4.js'></script>
+         <script src='https://code.jquery.com/ui/1.12.1/jquery-ui.js'></script>
+
+  <script type='text/javascript'>
+    
+    window.onload = function(){ getData();}; 
+    
+    function getData() {
+        
+     $.getJSON( 'http://serenity.rider.edu:9046/ataylor/dbget.py',
+                 function(data) {
+                    
+                    //alert( JSON.stringify( data ));
+                    outputData( data );
+                 } ); 
+        alert('hello - waiting');
+    }
+    
+    function outputData( recs ) {
+        
+        var buffer = "";  
+        for ( var n = 0; n < recs.length; n++ ) {
+            
+            buffer = buffer + "<li>" + recs[n].fname + " " + recs[n].lname + "</li>";
+            
+        }
+        buffer = "<ul>" + buffer + "</ul>";
+        $("#main").html( buffer );
+        
+    }
+    
+  </script>
+  
+</head>
+
+<div id='main' class='main-centered'>
+
+</div>
+
+</html>

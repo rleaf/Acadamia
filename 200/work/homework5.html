@@ -1,0 +1,42 @@
+<!--Ryan Lin, CIS 200 w/ Prof A Taylor. Feb 28 2019, hw5  -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+      <head>
+            <meta charset="utf-8">
+            <title>Homework 5</title>
+            <link rel='stylesheet' href='https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css'>
+            <link rel='stylesheet' href='/ataylor/fancy-table.css'>
+            <link rel='stylesheet' href='/ataylor/lms.css'>
+
+            <script type='text/javascript' src='/ataylor/utilities.js'></script>
+            <script src='https://code.jquery.com/jquery-1.12.4.js'></script>
+            <script src='https://code.jquery.com/ui/1.12.1/jquery-ui.js'></script>
+            <script type="text/javascript">
+                  function getInput() {
+
+                        var classname;
+                        var studentcount;
+
+                        classname = document.getElementById('classname').value;
+                        studentcount = document.getElementById('studentcount').value;
+
+                        message('Class ' + classname + ' has ' + studentcount + ' students enrolled.');
+                  }
+            </script>
+      </head>
+      <body>
+            <div class="main-centered">
+                  <table class="fancy-table">
+                        <tr>
+                              <td>Class name: </td>
+                              <td><input type="text" id="classname" name="" value=""></td>
+                        </tr>
+                        <tr>
+                              <td>Student count: </td>
+                              <td><input type="text" id="studentcount" name="" value=""></td>
+                        </tr>
+                  </table>
+                  <button type="button" onclick="getInput();" name="button">Submit</button>
+            </div>
+      </body>
+</html>

@@ -1,0 +1,113 @@
+<!-- Ryan Lin, CIS 200, Prof A Taylor, 4/22/19, Group Lab 2 -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+      <head>
+            <meta charset="utf-8">
+            <title>Group Lab 2, Ryan Lin</title>
+            <link rel='stylesheet' href='https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css'>
+            <link rel='stylesheet' href='/ataylor/fancy-table.css'>
+            <link rel='stylesheet' href='/ataylor/lms.css'>
+            <script type='text/javascript' src='/ataylor/utilities.js'></script>
+            <script src='https://code.jquery.com/jquery-1.12.4.js'></script>
+            <script src='https://code.jquery.com/ui/1.12.1/jquery-ui.js'></script>
+            <script type="text/javascript">
+
+                  var customer = [];
+                  var index = 0;
+
+                  function getData() {
+                        //working on this part
+                        $.getJSON('http://serenity.rider.edu:9046/ataylor/dbget.py',
+                              function(data) {
+                                    customer = data;
+                                    console.log('pulling from database')
+                                    displayCustomer();
+                              });
+                  };
+
+                  function displayCustomer() {
+
+                        $('#fname').val(customer[index].fname)
+                        $('#lname').val(customer[index].lname)
+                        $('#age').val(customer[index].age)
+                        $('#gender').val(customer[index].gender)
+                        $('#address1').val(customer[index].address1)
+                        $('#city').val(customer[index].city)
+                        $('#state').val(customer[index].state)
+                  }
+
+                  function nextRecord() {
+                        if (index + 1 >=  customer.length) {
+                              alert('no mas')
+                              return;
+                        } else;
+                        index++;
+                        displayCustomer(customer[index]);
+                  }
+
+                  function previousRecord() {
+                        if (index - 1 <  0) {
+                              alert('no mas')
+                              return;
+                        } else;
+                        index--;
+                        displayCustomer(customer[index]);
+                  }
+
+                  function firstRecord() {
+                        index = 0;
+                        displayCustomer(customer[index]);
+                  }
+
+                  function lastRecord() {
+                        index = customer.length -1;
+                        displayCustomer(customer[index]);
+                  }
+            </script>
+      </head>
+      <body>
+            <div class="main-centered">
+                  <table class='fancy-table'>
+                        <tr>
+                              <td>First Name:</td>
+                              <td><input type="text" id='fname' name="" value=""></td>
+                        </tr>
+                        <tr>
+                              <td>Last Name:</td>
+                              <td><input type="text" id='lname' name="" value=""></td>
+                        </tr>
+                        <tr>
+                              <td>Age:</td>
+                              <td><input type="text" id='age' name="" value=""></td>
+                        </tr>
+                        <tr>
+                              <td>Gender:</td>
+                              <td><input type="text" id='gender' name="" value=""></td>
+                        </tr>
+                        <tr>
+                              <td>Address:</td>
+                              <td><input type="text" id='address1' name="" value=""></td>
+                        </tr>
+                        <tr>
+                              <td>City:</td>
+                              <td><input type="text" id='city' name="" value=""></td>
+                        </tr>
+                        <tr>
+                              <td>State:</td>
+                              <td><input type="text" id='state' name="" value=""></td>
+                        </tr>
+                  </table>
+                  <br>
+                  <button type="button" onclick="getData()" name="button">Get Data</button>
+                  <button type="button" onclick="nextRecord()" name="button">Next</button>
+                  <button type="button" onclick="previousRecord()" name="button">Previous</button>
+                  <button type="button" onclick="firstRecord()" name="button">First</button>
+                  <button type="button" onclick="lastRecord()" name="button">Last</button>
+                  <!--
+                  <div id="testingtoseeifitsbroken" style="text-align: center; margin-top: 10px; font-family: 'Roboto', sans-serif;">
+
+                  </div>
+            -->
+            </div>
+      </body>
+</html>

@@ -1,0 +1,79 @@
+<html> 
+<head>
+<link rel='stylesheet' href='https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css'>
+<link rel='stylesheet' href='/ataylor/fancy-table.css'>
+<link rel='stylesheet' href='/ataylor/lms.css'>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.js"></script>
+
+<script>
+function getData() 
+{ 
+	// define
+	var customer = {};
+	customer.firstname = $("#first_name").val();
+	customer.lastname = $("#last_name").val();
+	customer.age = $("#age").val();
+	customer.gender = $("#gender").val();
+	customer.address1 = $("#address1").val();
+	customer.address2 = $("#address2").val();
+	customer.city = $("#city").val();
+	customer.state = $("#state").val();
+	customer.zip = $("#zip").val();
+
+	// specifiy alert
+	alert("Customer: " + JSON.stringify(customer));
+
+	//output to div
+	var buffer=JSON.stringify(customer);
+	buffer="<tr><td>" + buffer + "</tr></td>";
+	document.getElementById("table1").innerHTML = buffer;
+}
+</script>
+
+</head>
+
+
+<body>
+<table> 
+<tr> 
+<td>First Name: <input type="text" id="first_name"/></td>
+</tr>
+<tr>
+<td>Last Name: <input type="text" id="last_name"/></td>
+</tr>
+<tr>
+<td>Age: <input type="text" id="age"/></td>
+</tr>
+<tr>
+<td>Gender: <input type="text" id="gender"/></td>
+</tr>
+<tr>
+<td>Address 1: <input type="text" id="address1"/></td>
+</tr>
+<tr>
+<td>Address 2: <input type="text" id="address2"/></td>
+</tr>
+<tr>
+<td>City: <input type="text" id="city"/></td>
+</tr>
+<tr>
+<td>State: <input type="text" id="state"/></td>
+</tr>
+<tr>
+<td>Zip: <input type="text" id="zip"/></td>
+</tr>
+
+</tr>
+</table>
+<button type="button" onclick="getData()">Communicate with Server</button>
+
+<div class="main-centered" id="div1">
+<table class="fancy-table" id="table1">
+
+</table>
+</div>
+
+</body>
+
+</html>

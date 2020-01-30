@@ -1,0 +1,53 @@
+<!-- Ryan Lin, CIS 200, Prof Taylor, EC 5, 4/7/19  -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+      <head>
+            <meta charset="utf-8">
+            <title>Extra Credit 5</title>
+            <link rel='stylesheet' href='https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css'>
+            <link rel='stylesheet' href='/ataylor/fancy-table.css'>
+            <link rel='stylesheet' href='/ataylor/lms.css'>
+            <script type='text/javascript' src='/ataylor/utilities.js'></script>
+            <script src='https://code.jquery.com/jquery-1.12.4.js'></script>
+            <script src='https://code.jquery.com/ui/1.12.1/jquery-ui.js'></script>
+            <script type="text/javascript">
+
+                  function getInput() {
+
+                        var student = {};
+
+                        student.name = $('#name').val();
+                        student.major = $('#major').val();
+                        student.minor = $('#minor').val();
+                        student.years = $('#years').val();
+
+                        alert(JSON.stringify(student));
+
+                  }
+            </script>
+      </head>
+      <body>
+            <div class="main-centered">
+                  <h1>Student Information</h1>
+                  <table class='fancy-table'>
+                        <tr>
+                              <td>Student Name:</td>
+                              <td><input type="text" id='name' name="" value=""></td>
+                        </tr>
+                        <tr>
+                              <td>Major:</td>
+                              <td><input type="text" id='major' name="" value=""></td>
+                        </tr>
+                        <tr>
+                              <td>Minor:</td>
+                              <td><input type="text" id='minor' name="" value=""></td>
+                        </tr>
+                        <tr>
+                              <td>Years in School:</td>
+                              <td><input type="text" id='years' name="" value=""></td>
+                        </tr>
+                  </table>
+                  <button type="button" onclick="getInput()" name="button">Get Input</button>
+            </div>
+      </body>
+</html>

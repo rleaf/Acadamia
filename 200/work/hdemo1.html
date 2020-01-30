@@ -1,0 +1,95 @@
+<!-- Ryan Lin, CIS 200, Prof Taylro, 4/24/19, HW 10 -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+      <head>
+            <meta charset="utf-8">
+            <title>Ryan Lin, Homework 10</title>
+            <script type='text/javascript'src='https://code.jquery.com/jquery-1.12.4.js'></script>
+            <link rel='stylesheet' href='/ataylor/pickdate/themes/default.css'>
+            <link rel='stylesheet' href='/ataylor/pickdate/themes/default.date.css'>
+            <link rel='stylesheet' href='/ataylor/pickdate/themes/default.time.css'>
+            <link rel='stylesheet' href='/ataylor/lms.css' />
+           <link rel='stylesheet' href='/ataylor/blue-table.css' />
+           <script type='text/javascript'src='/ataylor/pickdate/picker.js'></script>
+           <script type='text/javascript' src='/ataylor/pickdate/picker.date.js'></script>
+           <script type="text/javascript">
+
+                 window.onload = function() {
+//                       $('#main-div').slideDown();
+                       $('.datepicker').pickadate();
+                 };
+
+                 function setDefaults() {
+                       $('input[name=year][value=freshman]').prop('checked', true);
+                       $('#datestarted').val('01/01/2019');
+                       console.log('setDefaults')
+                 }
+
+                 function doSubmit() {
+/*****
+                       var student = {};
+
+                       student.first = $('#first').val();
+                       student.last = $('#last').val();
+                       student.age = $('#age').val();
+                       student.dateStarted = $('#datestarted').val();
+                       student.year = document.getElementsByName('year');
+                       var yearSelected;
+
+                       alert(student.first + student.last + student.age + student.dateStarted + $('input[name=year]:checked').val());
+***/
+//IN CLASS
+
+                        var fname = $('#first').val();
+                        var lname = $('#last').val();
+                        var age = $('#age').val();
+                        var yearSelected;
+                        var year = document.getElementsByName('year');
+                        var dateStarted = $('#datestarted').val();
+
+                        alert('yearSelected: ' + $('input[name=year]:checked').val());
+
+                       for (var n = 0; n < year.length; n++) {
+                             if (year[n].checked) {
+                                   yearSelected = year[n].value;
+                             }
+                       }
+
+                       alert(' fname:' + fname + ' lname ' + lname + ' age ' + age + ' year selected ' + yearSelected
+                        + ' date started ' + dateStarted)
+
+            };
+           </script>
+      </head>
+      <body>
+            <div class="main-centered-medium">
+                  <table class='fancy-table'>
+                        <tr>
+                              <td>First:</td>
+                              <td><input type="text" id='first' name="" value=""></td>
+                        </tr>
+                        <tr>
+                              <td>Last:</td>
+                              <td><input type="text" id='last' name="" value=""></td>
+                        </tr>
+                        <tr>
+                              <td>Age:</td>
+                              <td><input type="text" id='age' name="" value=""></td>
+                        </tr>
+                        <tr>
+                              <td>Date Started:</td>
+                              <td><input type="text" class='datepicker' id='datestarted' name="" value=""></td>
+                        </tr>
+                        <tr>
+                              <td>Year in School:</td>
+                              <td><input type="radio" id='fresh' name="year" value="freshman">Freshman</td>
+                              <td><input type="radio" id='soph' name="year" value="sophomore">Sophomore</td>
+                              <td><input type="radio" id='jun' name="year" value="junior">Junior</td>
+                              <td><input type="radio" id='sen' name="year" value="senior">Senior</td>
+                        </tr>
+                  </table>
+                  <button type="button" onclick="doSubmit()" name="button">Button</button>
+
+            </div>
+      </body>
+</html>

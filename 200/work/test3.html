@@ -1,0 +1,37 @@
+<!--  a;sdlkfja;ldfkja;ldfksjasdf-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+      <head>
+            <meta charset="utf-8">
+            <title>Ryan Lin</title>
+            <script type="text/javascript">
+
+                  function doPies() {
+
+                        var pies = ['Apple', 'Blueberry', 'Peach', 'Pumpkin', 'Cherry']
+
+                        i = 0;
+                        while(pies[i]) {
+                              alert(pies[i]);
+                              i++;
+                        }
+
+                        /**********************/
+
+                        for (var i = 0; i < pies.length; i++) {
+                              alert(pies[i]);
+                        }
+
+                        var buff = '<ul>';
+
+                        document.getElementById('pies').innerHTML = buff + '<li>' + pies + '</li>' + '</ul>';
+                  }
+
+            </script>
+      </head>
+      <body>
+            <button type="button" onclick="doPies();" name="button">Pies</button>
+            <div id='pies'>
+            </div>
+      </body>
+</html>

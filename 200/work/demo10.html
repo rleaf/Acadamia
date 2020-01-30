@@ -1,0 +1,59 @@
+<!--  -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+      <head>
+            <meta charset="utf-8">
+            <title>demo 10</title>
+            <link rel='stylesheet' href='https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css'>
+            <link rel='stylesheet' href='/ataylor/fancy-table.css'>
+            <link rel='stylesheet' href='/ataylor/lms.css'>
+
+            <script type='text/javascript' src='/ataylor/utilities.js'></script>
+            <script src='https://code.jquery.com/jquery-1.12.4.js'></script>
+            <script src='https://code.jquery.com/ui/1.12.1/jquery-ui.js'></script>
+            <script type="text/javascript">
+                  function doSubmit() {
+
+                        var classcode;
+                        var day;
+                        var time;
+                        var professor;
+
+                        classcode = document.getElementById('classcode').value;
+                        day = document.getElementById('day').value;
+                        time = document.getElementById('time').value;
+                        professor = document.getElementById('professor').value;
+
+                        // professor $('#professor').val(); --Jquery library
+
+                        var msg = 'Class ' + classcode + ' is on ' + day +  ' at ' + time + ' and is taught by ' + professor;
+
+                        message(msg);
+                  }
+            </script>
+      </head>
+      <body>
+            <div class="main-centered">
+                  <table class='fancy-table'>
+                        <tr>
+                              <td>Class Code: </td>
+                              <td><input type='text' id='classcode'></td>
+                        </tr>
+                        <tr>
+                              <td>Day: </td>
+                              <td><input type='text' id='day'></td>
+                        </tr>
+                        <tr>
+                              <td>Time: </td>
+                              <td><input type='text' id='time'></td>
+                        </tr>
+                        <tr>
+                              <td>Professor: </td>
+                              <td><input type='text' id='professor'></td>
+                        </tr>
+                  </table>
+                  <button type="button" onclick="doSubmit();" name="button">Submit</button>
+
+            </div>
+      </body>
+</html>

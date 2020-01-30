@@ -1,0 +1,95 @@
+<html>
+
+	<head>
+	
+		<link rel='stylesheet' href='https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css'>
+		<link rel='stylesheet' href='/ataylor/fancy-table.css'>
+		<link rel='stylesheet' href='/ataylor/lms.css'>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.js"></script> 
+
+		<script type="text/javascript">
+		
+			function getData(){
+				var zips = {};
+
+				zips.zip = document.getElementById("zip").value;
+				zips.city = document.getElementById("city").value;
+				zips.state = document.getElementById("state").value;
+				zips.municipality = document.getElementById("municipality").value;
+
+				console.log(JSON.stringify(zips));
+
+				displayData(zips);
+			}
+
+			function displayData(zips){
+				var list = $('#output');
+
+				list.append('<li> Zip : ' + zips.zip + '</li>');
+				list.append('<li> City : ' + zips.city + '</li>');
+				list.append('<li> State : ' + zips.state + '</li>');
+				list.append('<li> Municipality : ' + zips.municipality + '</li>');
+			}
+
+		</script>
+
+	</head>
+
+	<body>
+
+		<table class="fancy-table">
+
+			<th> Zip Code Information </th>
+
+			<tr>
+				<td>
+					<label for="zip">Zip</label>
+				</td>
+
+				<td>
+					<input type="text" id="zip">
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<label for="city">City</label>
+				</td>
+
+				<td>
+					<input type="text" id="city">
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<label for="state">State</label>
+				</td>
+
+				<td>
+					<input type="text" id="state">
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<label for="municipality">Municipality</label>
+				</td>
+
+				<td>	
+					<input type="text" id="municipality">
+				</td>
+			</tr>
+
+		</table>
+
+		<button onclick="getData()">Submit</button>
+
+		<div>
+			<ul id="output">
+			</ul>
+		</div>
+
+	</body>
+
+</html>

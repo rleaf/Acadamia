@@ -1,0 +1,81 @@
+<!-- Ryan Lin, CIS 200, Prof Taylor, 4/4/19  -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+      <head>
+            <meta charset="utf-8">
+            <title>Group Lab 1 | CIS 200 | Ryan Lin</title>
+            <link rel='stylesheet' href='https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css'>
+            <link rel='stylesheet' href='/ataylor/fancy-table.css'>
+            <link rel='stylesheet' href='/ataylor/lms.css'>
+            <script type='text/javascript' src='/ataylor/utilities.js'></script>
+            <script src='https://code.jquery.com/jquery-1.12.4.js'></script>
+            <script src='https://code.jquery.com/ui/1.12.1/jquery-ui.js'></script>
+            <script type="text/javascript">
+
+                  function getData() {
+
+                        var customer = {};
+
+                        customer.first_name = $('#first_name').val();
+                        customer.last_name = $('#last_name').val();
+                        customer.age = $('#age').val();
+                        customer.gender = $('#gender').val();
+                        /* idk if this is necessary */
+                        customer.address1 = $('#address1').val();
+                        customer.address2 = $('#address2').val();
+                        /*  */
+                        customer.city = $('#city').val();
+                        customer.state = $('#state').val();
+                        customer.zip = $('#zip').val();
+
+                        alert(JSON.stringify(customer));
+                  }
+            </script>
+      </head>
+
+      <body>
+            <div class="main-centered">
+                  <table class="fancy-table">
+                        <tr>
+                              <td>First Name:</td>
+                              <td><input type="text" id="first_name" name="" value=""></td>
+                        </tr>
+                        <tr>
+                              <td>Last Name:</td>
+                              <td><input type="text" id="last_name" name="" value=""></td>
+                        </tr>
+                        <tr>
+                              <td>Age:</td>
+                              <td><input type="text" id="age" name="" value=""></td>
+                        </tr>
+                        <tr>
+                              <td>Gender:</td>
+                              <td><input type="text" id="gender" name="" value=""></td>
+                        </tr>
+                        <!-- idk if this is necessary -->
+                        <tr>
+                              <td>Address 1:</td>
+                              <td><input type="text" id="address1" name="" value=""></td>
+                        </tr>
+                        <tr>
+                              <td>Addresse 2:</td>
+                              <td><input type="text" id="address2" name="" value=""></td>
+                        </tr>
+                        <!--  -->
+                        <tr>
+                              <td>City:</td>
+                              <td><input type="text" id="city" name="" value=""></td>
+                        </tr>
+                        <tr>
+                              <td>State:</td>
+                              <td><input type="text" id="state" name="" value=""></td>
+                        </tr>
+                        <tr>
+                              <td>Zip:</td>
+                              <td><input type="text" id="zip" name="" value=""></td>
+                        </tr>
+                  </table>
+                  <button type="button" onclick="getData()" name="button">Get Customers</button>
+            </div>
+      </body>
+</html>

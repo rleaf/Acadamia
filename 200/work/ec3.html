@@ -1,0 +1,52 @@
+<!-- Ryan Lin, CIS 200, Prof Taylor, EC 3, 4/7/19 -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+      <head>
+            <meta charset="utf-8">
+            <title>Extra Credit 3</title>
+            <link rel='stylesheet' href='https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css'>
+            <link rel='stylesheet' href='/ataylor/fancy-table.css'>
+            <link rel='stylesheet' href='/ataylor/lms.css'>
+            <script type='text/javascript' src='/ataylor/utilities.js'></script>
+            <script src='https://code.jquery.com/jquery-1.12.4.js'></script>
+            <script src='https://code.jquery.com/ui/1.12.1/jquery-ui.js'></script>
+            <script type="text/javascript">
+
+                  function doObjectsDemo() {
+
+                        var studentObj = {};
+                        var classesObj = {};
+
+                        studentObj.name = 'Ryan';
+                        studentObj.age = '22';
+                        studentObj.phone = '123-456-7890'
+                        studentObj.dormAssigned = 'Lincoln';
+
+                        classesObj.name = 'CIS 200';
+                        classesObj.facultyTeaching = 'Taylor';
+                        classesObj.creditHours = '3';
+                        classesObj.building = 'North Hall';
+
+                        alert(JSON.stringify(studentObj));
+                        $('#div1').html(JSON.stringify(studentObj));
+
+                        alert(JSON.stringify(classesObj));
+                        $('#div2').html(JSON.stringify(classesObj));
+
+                  }
+            </script>
+      </head>
+      <body>
+            <div class="main-centered">
+                  <h1>Objects Demo</h1>
+                  <div id='div1'>
+
+                  </div>
+                  <br>
+                  <div id='div2'>
+
+                  </div>
+                  <button type="button" onclick="doObjectsDemo()" name="button">Do Objects Demo</button>
+            </div>
+      </body>
+</html>

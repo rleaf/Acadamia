@@ -1,0 +1,35 @@
+<!-- In class exercise, 2/11/19 -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+      <head>
+            <meta charset="utf-8">
+            <title>Demo 3</title>
+            <link rel="stylesheet" href="/ataylor/fancy-table.css">
+            <link rel="stylesheet" href="/ataylor/lms.css">
+
+            <script type="text/javascript">
+                  function doSomething() {
+
+                        var name;
+                        name = document.getElementById('name').value;
+
+                        alert(name);
+                  }
+            </script>
+      </head>
+      <body>
+            <div id='main' class="main-centered">
+                  <table class="fancy-table">
+                        <tr>
+                              <td> Name: </td>
+                              <td><input id='name' type='text'/></td>
+                        </tr>
+                        <tr>
+                              <td> Age: </td>
+                              <td><input id='age' type='text'/></td>
+                        </tr>
+                  </table>
+            <button type="button" onclick='doSomething();' name="button">Do Something</button>
+            </div>
+      </body>
+</html>

@@ -1,0 +1,52 @@
+<!--Ryan Lin. Prof Taylor, CIS 200 , Rider University In class stuff  -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+      <head>
+            <meta charset="utf-8">
+            <title>In class Demo 11</title>
+            <link rel='stylesheet' href='https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css'>
+            <link rel='stylesheet' href='/ataylor/fancy-table.css'>
+            <link rel='stylesheet' href='/ataylor/lms.css'>
+
+            <script type='text/javascript' src='/ataylor/utilities.js'></script>
+            <script src='https://code.jquery.com/jquery-1.12.4.js'></script>
+            <script src='https://code.jquery.com/ui/1.12.1/jquery-ui.js'></script>
+            <script type="text/javascript">
+                  //var msg;
+
+                  function submit() {
+
+                        var petname;
+                        var petage;
+
+                        petname = document.getElementById('petname').value;
+                        petage = document.getElementById('petage').value;
+
+                        msg = 'Your pet name is ' + petname + ' and your pet age is ' + petage + ' .';
+
+                        // alert('Your pet name is ' + petname + ' and your pet age is ' + petage + ' .')
+
+                        f1();
+                  }
+
+                  function f1() {
+                        message(msg);
+                  }
+            </script>
+      </head>
+      <body>
+            <div class="main-centered">
+                  <table class='fancy-table'>
+                        <tr>
+                              <td>Pet Name: </td>
+                              <td><input type="text" id='petname' name="" value=""></td>
+                        </tr>
+                        <tr>
+                              <td>Pet Age: </td>
+                              <td><input type="text" id='petage' name="" value=""></td>
+                        </tr>
+                  </table>
+                  <button type="button" onclick="submit();" name="button">Submit</button>
+            </div>
+      </body>
+</html>

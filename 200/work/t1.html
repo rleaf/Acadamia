@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+      <head>
+            <meta charset="utf-8">
+            <title></title>
+      </head>
+      <script type="text/javascript">
+            function doPies() {
+
+                  var pies = ['1', '2', '3', '4', '5']
+
+                  i = 0;
+                  while (pies[i]) {
+                        alert(i < pies.length);
+                        i++;
+                  }
+
+                  /*******************/
+
+                  for (var i = 0; i < pies.length; i++) {
+                        alert(pies[i]);
+                  }
+
+            }
+      </script>
+      <body>
+            <button type="button" onclick="doPies()" name="button">Pies</button>
+      </body>
+</html>
