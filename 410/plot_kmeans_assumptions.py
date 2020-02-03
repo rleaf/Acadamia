@@ -26,7 +26,7 @@ n_samples = 1500
 random_state = 170
 X, y = make_blobs(n_samples=n_samples, random_state=random_state)
 
-# Incorrect number of clusters
+# Incorrect number of clusters #
 y_pred = KMeans(n_clusters=2, random_state=random_state).fit_predict(X)
 
 plt.subplot(221)
