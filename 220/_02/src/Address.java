@@ -9,7 +9,5 @@ public class Address {
         System.out.println("2083 Lawrenceville Road");
         System.out.println("Lawrenceville NJ 08648");
         System.out.println("973 555 1234");
-
     }
-
 }
