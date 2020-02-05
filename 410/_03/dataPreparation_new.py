@@ -17,13 +17,12 @@ test_df = pd.read_csv("test_data.csv")
 # 3
 # print(ds.structdata.display_missing(train_df))
 
-
 # 4
-cat_feats = ds.structdata.get_cat_feats(train_df)
-num_feats = ds.structdata.get_num_feats(train_df)
+# cat_feats = ds.structdata.get_cat_feats(train_df)
+# num_feats = ds.structdata.get_num_feats(train_df)
 
-print(cat_feats)
-print(num_feats)
+# print(cat_feats)
+# print(num_feats)
 
 
 # 5 This one does not work
@@ -35,6 +34,7 @@ all_data, ntrain, ntest = ds.structdata.join_train_and_test(train_df, test_df)
 print("New size of combined data {}".format(all_data.shape))
 print("Old size of train data: {}".format(ntrain))
 print("Old size of test data: {}".format(ntest))
+print(all_data)
 
-train = all_data[:ntrain]
-test = all_data[ntrain:]
+# train = all_data[:ntrain]
+# test = all_data[ntrain:]
