@@ -22,7 +22,7 @@ from sklearn.datasets import make_blobs
 
 plt.figure(figsize=(12, 12))
 
-n_samples = 1500
+n_samples = 100
 random_state = 170
 X, y = make_blobs(n_samples=n_samples, random_state=random_state)
 
