@@ -10,7 +10,7 @@ public class StarPattern {
         System.out.println(" *****");
         System.out.println("  ***");
         System.out.println("   *");
-
+        System.out.print("abc" + "\n" + "def");
 //        System.out.print("*\n");
 //        System.out.print("**\n");
 //        System.out.print("***\n");

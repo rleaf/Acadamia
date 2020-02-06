@@ -23,16 +23,16 @@ test_df = pd.read_csv("test_data.csv")
 # print(ds.structdata.display_missing(train_df))
 
 # 4
-# cat_feats = ds.structdata.get_cat_feats(train_df)
-# num_feats = ds.structdata.get_num_feats(train_df)
+cat_feats = ds.structdata.get_cat_feats(train_df)
+num_feats = ds.structdata.get_num_feats(train_df)
 
-# print(cat_feats)
+print(cat_feats + num_feats)
 # print(num_feats)
 
 
 # 5 This one does not work
-unique_count = ds.structdata.get_unique_counts(train_df)
-print(unique_count)
+# unique_count = ds.structdata.get_unique_counts(train_df)
+# print(unique_count)
 
 # 6
 # all_data, ntrain, ntest = ds.structdata.join_train_and_test(train_df, test_df)
