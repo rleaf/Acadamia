@@ -10,5 +10,5 @@ df.head(10)
 
 # print(df)
 
-plt.scatter(df.Planet_Name, df.Distance)
+plt.scatter(df.Tday, df.Distance)
 plt.show()
