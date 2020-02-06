@@ -6,6 +6,20 @@
    "configurations": [
       {
          "type": "java",
+         "name": "CodeLens (Launch) - test",
+         "request": "launch",
+         "mainClass": "test",
+         "projectName": "Acadamia_524c719"
+      },
+      {
+         "type": "java",
+         "name": "CodeLens (Launch) - teset",
+         "request": "launch",
+         "mainClass": "teset",
+         "projectName": "Acadamia_524c719"
+      },
+      {
+         "type": "java",
          "name": "Debug (Launch) - Current File",
          "request": "launch",
          "mainClass": "${file}"
