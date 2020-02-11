@@ -13,10 +13,20 @@ public class sandbox {
         
         float alexa;
         double siri = 3.5;
-
+        
         alexa = (float)(siri);
-
+        
         System.out.println(alexa + "toads");
+        
+        //      Programming Challenge #2 - 
+        System.out.println("Programming Challenge #2 ########################################");
+
+        int fullPrice = 59;
+        double sale = 0.2;
+
+        System.out.println("The retail business sells product x at $" + fullPrice);
+        System.out.println("The retail business sells product x at $" + (fullPrice - (fullPrice * 0.2)) + " after the 20% sale");
+        System.out.println(fullPrice - (fullPrice * sale));
 
 //      Programming Challenge #2 - Sales Prediction
         System.out.println("Programming Challenge #2 - Sales Prediction ########################################");
