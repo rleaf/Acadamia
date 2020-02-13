@@ -6,6 +6,13 @@
    "configurations": [
       {
          "type": "java",
+         "name": "CodeLens (Launch) - pChallenge2_13_1",
+         "request": "launch",
+         "mainClass": "pChallenge2_13_1",
+         "projectName": "Acadamia_524c719"
+      },
+      {
+         "type": "java",
          "name": "CodeLens (Launch) - test2",
          "request": "launch",
          "mainClass": "test2",
