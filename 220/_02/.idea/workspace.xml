@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a6d3eb1f-e6b8-42e6-950d-a8ae7b3bc315" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1XMCZL9xJkrnxweJO9krSR3OEIp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunManager" selected="Application.sandbox">
+    <configuration name="Address" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Address" />
+      <module name="ch_02_01" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BigLittle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BigLittle" />
+      <module name="ch_02_01" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StarPattern" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StarPattern" />
+      <module name="ch_02_01" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="retailPriceSale" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="retailPriceSale" />
+      <module name="ch_02_01" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sandbox" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sandbox" />
+      <module name="ch_02_01" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.sandbox" />
+        <item itemvalue="Application.retailPriceSale" />
+        <item itemvalue="Application.BigLittle" />
+        <item itemvalue="Application.StarPattern" />
+        <item itemvalue="Application.Address" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a6d3eb1f-e6b8-42e6-950d-a8ae7b3bc315" name="Default Changelist" comment="" />
+      <created>1580846630921</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580846630921</updated>
+      <workItem from="1580846634058" duration="2010000" />
+      <workItem from="1581020957266" duration="246000" />
+      <workItem from="1581450978392" duration="2391000" />
+      <workItem from="1582058242510" duration="61000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="320" y="115" key="#Project_Structure" timestamp="1580846641658">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="115" key="#Project_Structure/0.0.1440.900@0.0.1440.900" timestamp="1580846641658" />
+    <state x="331" y="54" key="CommitChangelistDialog2" timestamp="1581453917849">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="331" y="54" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1581453917849" />
+    <state width="1398" height="188" key="GridCell.Tab.0.bottom" timestamp="1581454592607">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="188" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1581454592607" />
+    <state width="1398" height="188" key="GridCell.Tab.0.center" timestamp="1581454592606">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="188" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1581454592606" />
+    <state width="1398" height="188" key="GridCell.Tab.0.left" timestamp="1581454592606">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="188" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1581454592606" />
+    <state width="1398" height="188" key="GridCell.Tab.0.right" timestamp="1581454592607">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="188" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1581454592607" />
+    <state x="413" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1582058244755">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="413" y="282" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1582058244755" />
+    <state x="525" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580847832884">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="525" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1580847832884" />
+    <state x="149" y="72" key="new project wizard" timestamp="1582058299803">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="149" y="72" key="new project wizard/0.0.1440.900@0.0.1440.900" timestamp="1582058299803" />
+  </component>
+</project>
