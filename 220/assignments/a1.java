@@ -10,31 +10,39 @@ import java.util.Scanner;
 public class a1 {
    
    public static void main(final String[] args) {
+
+      /**
+       * Test Average section of Assignment 1 - Section 1
+       */
       
-      // int testOne, testTwo, testThree;
+      int testOne, testTwo, testThree;
       
-      // final Scanner keyboard = new Scanner(System.in);
+      final Scanner keyboard = new Scanner(System.in);
 
-      // System.out.println("Test 1 score:");
-      // testOne = keyboard.nextInt();
+      System.out.println("Test 1 score:");
+      testOne = keyboard.nextInt();
 
-      // System.out.println("Test 2 score:");
-      // testTwo = keyboard.nextInt();
+      System.out.println("Test 2 score:");
+      testTwo = keyboard.nextInt();
 
-      // System.out.println("Test 1 score:");
-      // testThree = keyboard.nextInt();
+      System.out.println("Test 1 score:");
+      testThree = keyboard.nextInt();
 
-      // System.out.printf("Test one score: %d%nTest two score: %d%nTest three score: %d%n", testOne, testTwo, testThree);
-      // System.out.println("The average test score is: " + ((testOne + testTwo + testThree) / 3) );
+      System.out.printf("Test one score: %d%nTest two score: %d%nTest three score: %d%n", testOne, testTwo, testThree);
+      System.out.println("The average test score is: " + ((testOne + testTwo + testThree) / 3) );
 
 
 
-      // stringManipulator();
-      // restaurantBill();
+      stringManipulator();
+      restaurantBill();
       wordGame();
    }
 
    public static void stringManipulator() {
+
+      /**
+       * String Manipulator section of Assignment 1 - Section 2
+       */
 
       String favCity;
 
@@ -51,6 +59,10 @@ public class a1 {
    }
 
    public static void restaurantBill() {
+
+      /**
+       * Restaurant Bill section of Assignment 1 - Section 3
+       */
       
       double bill, totalBill, tax, tip;
       final double taxRate = 0.565, tipRate = 0.2;
@@ -71,6 +83,10 @@ public class a1 {
    }
 
    public static void wordGame() {
+
+      /**
+       * Word Game section of Assignment 1 - Section 4
+       */
       
       int age;
       String name, nameOfCity, nameOfCollege, profession, animal, petName;
@@ -82,6 +98,9 @@ public class a1 {
       
       System.out.println("Enter an age: ");
       age = keyboard.nextInt();
+
+      // Scanner.nextInt() does not consume '\n' character
+      keyboard.nextLine(); 
       
       System.out.println("Enter a name of a city: ");
       nameOfCity = keyboard.nextLine();
@@ -98,6 +117,6 @@ public class a1 {
       System.out.println("Enter a pet name: ");
       petName = keyboard.nextLine();
 
-      System.out.printf("There once was a person named %s who lived in %s. At the age of %i, %s went to college at %s.", name, age);
+      System.out.printf("There once was a person named %s who lived in %s. At the age of %d, %s went to college at %s. %s graduated and went back to work as a %s. Then, %s adopted an %s named %s. They both lived happily ever after!", name, nameOfCity, age, name, nameOfCollege, name, profession, name, animal, petName);
    }
 }
