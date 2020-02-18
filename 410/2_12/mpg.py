@@ -13,6 +13,7 @@ dataset = pd.read_csv('mpg.csv',index_col=0)
 #print(dataset.head(10))  # print the first n rows
 
 
+
 # Total missing values for each feature
 print(dataset.isnull().sum())
 
