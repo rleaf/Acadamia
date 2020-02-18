@@ -98,6 +98,6 @@ public class a1 {
       System.out.println("Enter a pet name: ");
       petName = keyboard.nextLine();
 
-      System.out.printf("There once was a person named %s who lived in %s. At the age of %i, %s went to college at %s.", name, nameOfCity, age, name, nameOfCollege);
+      System.out.printf("There once was a person named %s who lived in %s. At the age of %i, %s went to college at %s.", name, age);
    }
 }
