@@ -3,6 +3,8 @@ public class Rectangle {
     private double length;
     private double width;
 
+
+    //  Setters ?
     public void setLength(double len) {
         length = len;
     }
@@ -11,6 +13,7 @@ public class Rectangle {
         width = wid;
     }
 
+    // Getters?
     public double getLength() {
         return length;
     }
