@@ -6,19 +6,6 @@ public class Employee {
 
 
    // Setters
-
-   // public void setName(String name) {
-   //    _name = name;
-   // }
-
-   // public void setDepartment(String department) {
-   //    _department = department;
-   // }
-
-   // public void setId(double idNumber) {
-   //    _idNumber = idNumber;
-   // }
-
    public void set(String name, int idNumber, String department) {
       _name = name;
       _department = department;
@@ -26,7 +13,6 @@ public class Employee {
    }
    
    //  Getters
-
    public String getName() {
       return _name;
    }
