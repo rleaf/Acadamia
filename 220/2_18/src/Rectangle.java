@@ -4,7 +4,7 @@ public class Rectangle {
     private double width;
 
 
-    //  Setters ?
+    //  Setters
     public void setLength(double len) {
         length = len;
     }
@@ -13,7 +13,7 @@ public class Rectangle {
         width = wid;
     }
 
-    // Getters?
+    // Getters
     public double getLength() {
         return length;
     }
