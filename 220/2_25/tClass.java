@@ -1,12 +1,17 @@
 public class tClass {
 
-   public int x;
-   public int y;
+    int x;
+    int y;
+
+    public tClass(int _x, int _y) {
+        x = _x;
+        y = _y;
+    }
 
 
-   public tClass(int _x, int _y) {
-      _x = x;
-      _y = y;
-   }
+
+    public int getX() {
+        return x;
+    }
 
 }
