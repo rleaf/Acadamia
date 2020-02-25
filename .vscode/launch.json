@@ -6,6 +6,13 @@
    "configurations": [
       {
          "type": "java",
+         "name": "CodeLens (Launch) - EmployeeConstructer",
+         "request": "launch",
+         "mainClass": "EmployeeConstructer",
+         "projectName": "Acadamia_524c719"
+      },
+      {
+         "type": "java",
          "name": "CodeLens (Launch) - a1",
          "request": "launch",
          "mainClass": "a1",
