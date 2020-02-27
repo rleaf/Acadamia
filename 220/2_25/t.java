@@ -6,6 +6,8 @@ public class t {
 
         System.out.println(abc.x);
 
+        System.out.println(abc.getX() + "toads");
+
     }
 
 }
