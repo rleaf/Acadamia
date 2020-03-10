@@ -6,6 +6,13 @@
    "configurations": [
       {
          "type": "java",
+         "name": "CodeLens (Launch) - nestedFor",
+         "request": "launch",
+         "mainClass": "nestedFor",
+         "projectName": "Acadamia_524c719"
+      },
+      {
+         "type": "java",
          "name": "CodeLens (Launch) - t",
          "request": "launch",
          "mainClass": "src.t",
