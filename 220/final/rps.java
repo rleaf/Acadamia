@@ -20,44 +20,45 @@ public class rps {
 
       computerNumber = random.nextInt(3) + 1;
 
-      // switch (computerNumber) {
-      //    case 1:
-      //       computerInput = "rock";
-      //       // break;
-      //    case 2:
-      //       computerInput = "paper";
-      //       // break;
-      //    default:
-      //       computerInput = "scissors";
-      //       // break;
-      // }
-
-      if (computerNumber == 1) {
-         computerInput = "rock";
-      } else if (computerNumber == 2) {
-         computerInput = "paper";
-      } else {
-         computerInput = "scissors";
+      switch (computerNumber) {
+         case 1:
+            computerInput = "rock";
+            break;
+         case 2:
+            computerInput = "paper";
+            break;
+         default:
+            computerInput = "scissors";
+            break;
       }
+
 
       System.out.println("The user picked "+ userInput);
       System.out.println("The computer picked " + computerInput);
 
-      if (userInput.equals("scissors") && computerInput.equals("paper")) {
+      if ((userInput.equals("scissors") && computerInput.equals("paper")) || (userInput.equals("rock") && computerInput.equals("scissors")) || (userInput.equals("paper") && computerInput.equals("rock")) ) {
          System.out.println("User wins!");
-      } else if (userInput.equals("rock") && computerInput.equals("paper")) {
-         System.out.println("Computer wins!");
-      } else if (userInput.equals("rock") && computerInput.equals("scissors")) {
-         System.out.println("User wins!");
-      } else if (userInput.equals("paper") && computerInput.equals("rock")) {
-         System.out.println("User wins!");
-      } else if (userInput.equals("paper") && computerInput.equals("scissors")) {
-         System.out.println("Computer wins!");
-      } else if (userInput.equals("scissors") && computerInput.equals("rock")) {
+      } else if ((userInput.equals("rock") && computerInput.equals("paper")) || (userInput.equals("paper") && computerInput.equals("scissors")) || (userInput.equals("scissors") && computerInput.equals("rock")) ) {
          System.out.println("Computer wins!");
       } else {
          System.out.println("The game is a tie!");
       } 
+
+      // if (userInput.equals("scissors") && computerInput.equals("paper")) {
+      //    System.out.println("User wins!");
+      // } else if (userInput.equals("rock") && computerInput.equals("paper")) {
+      //    System.out.println("Computer wins!");
+      // } else if (userInput.equals("rock") && computerInput.equals("scissors")) {
+      //    System.out.println("User wins!");
+      // } else if (userInput.equals("paper") && computerInput.equals("rock")) {
+      //    System.out.println("User wins!");
+      // } else if (userInput.equals("paper") && computerInput.equals("scissors")) {
+      //    System.out.println("Computer wins!");
+      // } else if (userInput.equals("scissors") && computerInput.equals("rock")) {
+      //    System.out.println("Computer wins!");
+      // } else {
+      //    System.out.println("The game is a tie!");
+      // } 
 
 
       
