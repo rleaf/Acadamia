@@ -6,6 +6,27 @@
    "configurations": [
       {
          "type": "java",
+         "name": "CodeLens (Launch) - chkPoint2",
+         "request": "launch",
+         "mainClass": "chkPoint2",
+         "projectName": "Acadamia_f3fe149c"
+      },
+      {
+         "type": "java",
+         "name": "CodeLens (Launch) - rps",
+         "request": "launch",
+         "mainClass": "rps",
+         "projectName": "Acadamia_f3fe149c"
+      },
+      {
+         "type": "java",
+         "name": "CodeLens (Launch) - FileWriteDemo",
+         "request": "launch",
+         "mainClass": "FileWriteDemo",
+         "projectName": "Acadamia_f3fe149c"
+      },
+      {
+         "type": "java",
          "name": "CodeLens (Launch) - nestedFor",
          "request": "launch",
          "mainClass": "nestedFor",
