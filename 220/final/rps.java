@@ -42,25 +42,7 @@ public class rps {
          System.out.println("Computer wins!");
       } else {
          System.out.println("The game is a tie!");
-      } 
-
-      // if (userInput.equals("scissors") && computerInput.equals("paper")) {
-      //    System.out.println("User wins!");
-      // } else if (userInput.equals("rock") && computerInput.equals("paper")) {
-      //    System.out.println("Computer wins!");
-      // } else if (userInput.equals("rock") && computerInput.equals("scissors")) {
-      //    System.out.println("User wins!");
-      // } else if (userInput.equals("paper") && computerInput.equals("rock")) {
-      //    System.out.println("User wins!");
-      // } else if (userInput.equals("paper") && computerInput.equals("scissors")) {
-      //    System.out.println("Computer wins!");
-      // } else if (userInput.equals("scissors") && computerInput.equals("rock")) {
-      //    System.out.println("Computer wins!");
-      // } else {
-      //    System.out.println("The game is a tie!");
-      // } 
-
-
+      }
       
    } 
 }
