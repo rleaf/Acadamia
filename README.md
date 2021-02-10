@@ -1,3 +1,4 @@
 # Acadamia
+### CS & a bit more
 
-Computer Science & Computer Information Systems
+Centralization of academic & hobby work
